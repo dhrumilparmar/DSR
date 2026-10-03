@@ -1,0 +1,18 @@
+{
+  "name": "daily-work-report",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generate the daily work-update table for your reporting manager",
+  "scripts": {
+    "setup": "npm install && npm install --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "node server/index.js",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "npm run dev --prefix client"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0"
+  }
+}
